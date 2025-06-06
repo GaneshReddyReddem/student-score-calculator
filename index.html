@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Grade Calculator</h1>
+        <div class="form-group">
+            <input type="number" id="m1" placeholder="Enter Midterm 1 Marks">
+            <input type="number" id="m2" placeholder="Enter Midterm 2 Marks">
+            <input type="number" id="a" placeholder="Enter Assignment Marks">
+            <input type="number" id="sem" placeholder="Enter Semester Exam Marks">
+        </div>
+        <button onclick="calculation()">Calculate Grade</button>
+        <div id="result">
+            <p id="tm"></p>
+            <p id="gd"></p>
+            <p id="msg"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

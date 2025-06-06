@@ -1,0 +1,128 @@
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #1e272e, #485460);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container - Perfectly Centered */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+    border: 3px solid #ff9f43;
+}
+
+/* Title */
+.container h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff9f43;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Form Group - Centered Grid */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Input Fields */
+input {
+    padding: 12px;
+    border: 2px solid #ff9f43;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    background: #ecf0f1;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Stylish Button - Centered */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #e74c3c, #ff9f43);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #ff9f43;
+}
+
+/* Result Display - Centered */
+#result {
+    background: white;
+    border-radius: 6px;
+    color: #e74c3c;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.5);
+    width: fit-content;
+    text-align: center;
+}
+
+/* Score & Grade Styling */
+#tm {
+    color: #ff9f43;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#gd {
+    color: #2ecc71;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Message Styling */
+#msg {
+    color: #121313;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    input, button {
+        width: 100%;
+    }
+}
